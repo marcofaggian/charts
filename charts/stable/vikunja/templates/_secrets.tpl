@@ -51,8 +51,8 @@ stringData:
       interface: ":3456"
       JWTSecret: {{ $jwtSecret }}
       timezone: {{ .Values.TZ | quote }}
-      jwtttl: {{ .Values.vikunja.service.jwtttl | int }}
-      jwtttllong: {{ .Values.vikunja.service.jwtttllong | int }}
+      jwtttl: {{ .Values.vikunja.service.jwtttl | quote }}
+      jwtttllong: {{ .Values.vikunja.service.jwtttllong | quote }}
       frontendurl: {{ .Values.vikunja.service.frontendurl | quote }}
       maxitemsperpage: {{ .Values.vikunja.service.maxitemsperpage }}
       enablecaldav: {{ .Values.vikunja.service.enablecaldav }}
